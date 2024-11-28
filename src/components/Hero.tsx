@@ -12,7 +12,7 @@ const Hero = () => {
             <span className="block text-blue-600 mt-2">24/7 Medical Services</span>
           </h1>
           <p className="mt-6 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-8 md:text-xl md:max-w-3xl animate-fade-in">
-            Get immediate access to top doctors and fast ambulance services. We're here to ensure your well-being around the clock.
+            Get immediate access to top doctors and fast ambulance services. We are here to ensure your well-being around the clock.
           </p>
           <div className="mt-8 max-w-md mx-auto sm:flex sm:justify-center md:mt-10 animate-fade-in-up">
             <div className="rounded-md shadow">

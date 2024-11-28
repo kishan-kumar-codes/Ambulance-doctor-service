@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, Suspense } from 'react';
+import { useState, useEffect, Suspense, useCallback } from 'react';
 import { Ambulance } from '../types/ambulance';
 import {
   fetchAmbulances,
@@ -24,12 +24,9 @@ const AmbulancesPage = () => {
 
   const limit = 10;
 
-  useEffect(() => {
-    setIsMounted(true);
-    fetchAmbulancesData();
-  }, [currentPage,limit ]);
 
-  const fetchAmbulancesData = async () => {
+
+  const fetchAmbulancesData = useCallback(async () => {
     setIsLoading(true);
     setError(null);
     try {
@@ -37,11 +34,16 @@ const AmbulancesPage = () => {
       setAmbulances(response.ambulances);
       setTotalAmbulances(response.total);
     } catch (err) {
-      console.log('Error in Fetching Ambulance data:',err)
+      console.log('Error in Fetching Ambulance data:', err);
       setError('Failed to fetch ambulances. Please try again.');
     }
     setIsLoading(false);
-  };
+  }, [currentPage, limit]);
+
+  useEffect(() => {
+    setIsMounted(true);
+    fetchAmbulancesData(); 
+  }, [fetchAmbulancesData]); 
 
   const handleCreateAmbulance = async (ambulance: Omit<Ambulance, 'id'>) => {
     try {

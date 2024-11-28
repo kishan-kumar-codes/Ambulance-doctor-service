@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, Suspense } from 'react';
+import { useState, useEffect, Suspense, useCallback } from 'react';
 import { Doctor } from '../types/doctor';
 import {
   fetchDoctors,
@@ -24,25 +24,27 @@ const DoctorsPage = () => {
 
   const limit = 10;
 
-  useEffect(() => {
-    setIsMounted(true);
-    fetchDoctorsData();
-  }, [currentPage, limit]);
+ 
 
-  const fetchDoctorsData = async () => {
+  const fetchDoctorsData = useCallback(async () => {
     setIsLoading(true);
     setError(null);
     try {
       const response = await fetchDoctors(currentPage, limit);
       setDoctors(response.doctors);
-      console.log("doctors data:", response)
+      console.log("Doctors data:", response);
       setTotalDoctors(response.total);
     } catch (err) {
-      console.log('Error in Fetching Doctors data:',err)
+      console.error('Error in fetching doctors data:', err);
       setError('Failed to fetch doctors. Please try again.');
     }
     setIsLoading(false);
-  };
+  }, [currentPage, limit]); 
+
+  useEffect(() => {
+    setIsMounted(true);
+    fetchDoctorsData(); 
+  }, [fetchDoctorsData]);
 
   const handleCreateDoctor = async (doctor: Omit<Doctor, 'id'>) => {
     try {

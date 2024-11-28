@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { Doctor } from '@/app/types/doctor';
-import { Edit2, Trash2, Phone, Mail, Droplets, MapPin, FileText, Hash } from 'lucide-react';
+import { Edit2, Trash2, Phone,  Droplets, MapPin, FileText, Hash } from 'lucide-react';
 import { useState } from 'react';
 
 interface DoctorCardProps {

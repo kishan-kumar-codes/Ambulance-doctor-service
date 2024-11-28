@@ -171,7 +171,7 @@
     "id": 1732695221364,
     "title": "Dr. Yash Thakur",
     "description": "Cardiothoracic Surgery",
-    "phone": "6543210987",
+    "phone": "6543210988",
     "location": "Coimbatore",
     "image": ""
   },
@@ -198,12 +198,5 @@
     "phone": "3210987654",
     "location": "Bhopal",
     "image": ""
-  },
-  {
-    "title": "Dr. Ranganathan",
-    "description": "specialist in cardio",
-    "location": "Delhi",
-    "phone": "7896541237",
-    "id": 1732768279311
   }
 ]

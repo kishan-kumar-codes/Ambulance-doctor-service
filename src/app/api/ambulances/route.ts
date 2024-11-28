@@ -38,6 +38,7 @@ export async function GET(request: Request): Promise<Response> {
       total: ambulances.length,
     });
   } catch (error) {
+    console.log("Error in GET ambulance method:",error);
     return new Response(JSON.stringify({ error: 'Error reading data' }), { status: 500 });
   }
 }
@@ -57,6 +58,7 @@ export async function POST(request: Request): Promise<Response> {
 
     return Response.json(newAmbulance, { status: 201 });
   } catch (error) {
+    console.log("Error in POST ambulance method:",error);
     return new Response(JSON.stringify({ error: "Error creating ambulance" }), { status: 500 });
   }
 }
@@ -75,6 +77,7 @@ export async function PUT(request: Request): Promise<Response> {
 
     return Response.json({ message: "Updated successfully" });
   } catch (error) {
+    console.log("Error in PUT ambulance method:",error);
     return new Response(JSON.stringify({ error: "Error updating ambulance" }), { status: 500 });
   }
 }
@@ -96,6 +99,7 @@ export async function DELETE(request: Request): Promise<Response> {
 
     return Response.json({ message: "Deleted successfully" });
   } catch (error) {
+    console.log("Error in DELETE ambulance method:",error);
     return new Response(JSON.stringify({ error: "Error deleting ambulance" }), { status: 500 });
   }
 }

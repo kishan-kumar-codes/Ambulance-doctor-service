@@ -27,7 +27,7 @@ const AmbulancesPage = () => {
   useEffect(() => {
     setIsMounted(true);
     fetchAmbulancesData();
-  }, [currentPage]);
+  }, [currentPage,limit ]);
 
   const fetchAmbulancesData = async () => {
     setIsLoading(true);
@@ -37,6 +37,7 @@ const AmbulancesPage = () => {
       setAmbulances(response.ambulances);
       setTotalAmbulances(response.total);
     } catch (err) {
+      console.log('Error in Fetching Ambulance data:',err)
       setError('Failed to fetch ambulances. Please try again.');
     }
     setIsLoading(false);
@@ -48,6 +49,7 @@ const AmbulancesPage = () => {
       setIsFormOpen(false);
       fetchAmbulancesData();
     } catch (err) {
+      console.log('Error in Creating Ambulance data:',err)
       setError('Failed to create ambulance. Please try again.');
     }
   };
@@ -58,6 +60,7 @@ const AmbulancesPage = () => {
       setEditingAmbulance(null);
       fetchAmbulancesData();
     } catch (err) {
+      console.log('Error in Updating Ambulance data:',err)
       setError('Failed to update ambulance. Please try again.');
     }
   };
@@ -68,6 +71,7 @@ const AmbulancesPage = () => {
         await deleteAmbulance(id);
         fetchAmbulancesData();
       } catch (err) {
+        console.log('Error in Deleting Ambulance data:',err)
         setError('Failed to delete ambulance. Please try again.');
       }
     }

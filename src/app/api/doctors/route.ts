@@ -37,6 +37,7 @@ export async function GET(request: Request): Promise<Response> {
       total: doctors.length,
     });
   } catch (error) {
+    console.log("Error in GET doctor method:",error);
     return new Response(JSON.stringify({ error: 'Error reading data' }), { status: 500 });
   }
 }
@@ -57,6 +58,7 @@ export async function POST(request: Request): Promise<Response> {
 
     return Response.json(newDoctor, { status: 201 });
   } catch (error) {
+    console.log("Error in POST doctor method:",error);
     return new Response(JSON.stringify({ error: "Error creating doctor" }), { status: 500 });
   }
 }
@@ -74,6 +76,7 @@ export async function PUT(request: Request): Promise<Response> {
 
     return Response.json({ message: "Updated successfully" });
   } catch (error) {
+    console.log("Error in PUT doctor method:",error);
     return new Response(JSON.stringify({ error: "Error updating doctor" }), { status: 500 });
   }
 }
@@ -98,6 +101,7 @@ export async function DELETE(request: Request): Promise<Response> {
 
     return Response.json({ message: "Deleted successfully" });
   } catch (error) {
+    console.log("Error in DELETE doctor method:",error);
     return new Response(JSON.stringify({ error: "Error deleting doctor" }), { status: 500 });
   }
 }

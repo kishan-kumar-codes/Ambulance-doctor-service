@@ -27,7 +27,7 @@ const DoctorsPage = () => {
   useEffect(() => {
     setIsMounted(true);
     fetchDoctorsData();
-  }, [currentPage]);
+  }, [currentPage, limit]);
 
   const fetchDoctorsData = async () => {
     setIsLoading(true);
@@ -38,6 +38,7 @@ const DoctorsPage = () => {
       console.log("doctors data:", response)
       setTotalDoctors(response.total);
     } catch (err) {
+      console.log('Error in Fetching Doctors data:',err)
       setError('Failed to fetch doctors. Please try again.');
     }
     setIsLoading(false);
@@ -49,6 +50,7 @@ const DoctorsPage = () => {
       setIsFormOpen(false);
       fetchDoctorsData();
     } catch (err) {
+      console.log('Error in Creating Doctors data:',err)
       setError('Failed to create doctor. Please try again.');
     }
   };
@@ -60,6 +62,7 @@ const DoctorsPage = () => {
       setEditingDoctor(null);
       fetchDoctorsData();
     } catch (err) {
+      console.log('Error in Updating Doctors data:',err)
       setError('Failed to update doctor. Please try again.');
     }
   };
@@ -70,6 +73,7 @@ const DoctorsPage = () => {
         await deleteDoctor(id);
         fetchDoctorsData();
       } catch (err) {
+        console.log('Error in Delete Doctors data:',err)
         setError('Failed to delete doctor. Please try again.');
       }
     }

@@ -1,0 +1,169 @@
+[
+  {
+    "title": "Rapid Response",
+    "description": "24/7 Emergency Ambulance",
+    "phone": "9876543212",
+    "location": "Mumbai",
+    "id": 1732693692133,
+    "image": ""
+  },
+  {
+    "title": "Speed Ambulance",
+    "description": "Fastest medical assistance",
+    "phone": "8765432109",
+    "location": "Kolkata",
+    "id": 1732693692134,
+    "image": ""
+  },
+  {
+    "title": "Medica Help",
+    "description": "Basic medical transport",
+    "phone": "7654321098",
+    "location": "Chennai",
+    "id": 1732693692135,
+    "image": ""
+  },
+  {
+    "title": "City Life Ambulance",
+    "description": "Professional health transport",
+    "phone": "6543210987",
+    "location": "Bangalore",
+    "id": 1732693692136,
+    "image": ""
+  },
+  {
+    "title": "Quick Aid Ambulance",
+    "description": "Emergency response team",
+    "phone": "5432109876",
+    "location": "Hyderabad",
+    "id": 1732693692137,
+    "image": ""
+  },
+  {
+    "title": "Medivac",
+    "description": "Critical care transport",
+    "phone": "4321098765",
+    "location": "Ahmedabad",
+    "id": 1732693692138,
+    "image": ""
+  },
+  {
+    "title": "Rescue 24",
+    "description": "Emergency medical service",
+    "phone": "3210987654",
+    "location": "Surat",
+    "id": 1732693692139,
+    "image": ""
+  },
+  {
+    "title": "LifeLine",
+    "description": "Ambulance with paramedic service",
+    "phone": "2109876543",
+    "location": "Jaipur",
+    "id": 1732693692140,
+    "image": ""
+  },
+  {
+    "title": "MedEvac",
+    "description": "Emergency air ambulance service",
+    "phone": "1098765432",
+    "location": "Delhi",
+    "id": 1732693692141,
+    "image": ""
+  },
+  {
+    "title": "Quick Care Ambulance",
+    "description": "Rapid response ambulance",
+    "phone": "8877665544",
+    "location": "Bhopal",
+    "id": 1732693692143,
+    "image": ""
+  },
+  {
+    "title": "LifeLine Emergency",
+    "description": "Pre-hospital care transport",
+    "phone": "7766554433",
+    "location": "Coimbatore",
+    "id": 1732693692144,
+    "image": ""
+  },
+  {
+    "title": "Rescue Now",
+    "description": "Quick medical help at your door",
+    "phone": "6655443322",
+    "location": "Nagpur",
+    "id": 1732693692145,
+    "image": ""
+  },
+  {
+    "title": "Vital Ambulance",
+    "description": "Emergency medical transport",
+    "phone": "5544332211",
+    "location": "Kochi",
+    "id": 1732693692146,
+    "image": ""
+  },
+  {
+    "title": "Med Rescue",
+    "description": "Critical care ambulance service",
+    "phone": "4433221100",
+    "location": "Chandigarh",
+    "id": 1732693692147,
+    "image": ""
+  },
+  {
+    "title": "Emergency Plus",
+    "description": "Health transport with advanced care",
+    "phone": "3322110099",
+    "location": "Vadodara",
+    "id": 1732693692148,
+    "image": ""
+  },
+  {
+    "title": "CareLine Ambulance",
+    "description": "Transport for critical patients",
+    "phone": "2211009988",
+    "location": "Indore",
+    "id": 1732693692149,
+    "image": ""
+  },
+  {
+    "title": "Swift Response",
+    "description": "Emergency ambulance service",
+    "phone": "1100998877",
+    "location": "Patna",
+    "id": 1732693692150,
+    "image": ""
+  },
+  {
+    "title": "Prime Care",
+    "description": "Ambulance for all emergencies",
+    "phone": "9988776655",
+    "location": "Faridabad",
+    "id": 1732693692151,
+    "image": ""
+  },
+  {
+    "title": "Help Now Ambulance",
+    "description": "Medical transport service",
+    "phone": "8877665544",
+    "location": "Raipur",
+    "id": 1732693692152,
+    "image": ""
+  },
+  {
+    "title": "CareConnect",
+    "description": "Professional ambulance service",
+    "phone": "7766554433",
+    "location": "Vijayawada",
+    "id": 1732693692153,
+    "image": ""
+  },
+  {
+    "title": "First Response",
+    "description": "24/7 Availability",
+    "location": "Banglore",
+    "phone": "7894561230",
+    "id": 1732768077988
+  }
+]

@@ -1,6 +1,3 @@
-
-
-
 "use client";
 
 import Image from 'next/image';
@@ -21,7 +18,7 @@ const AmbulanceCard: React.FC<AmbulanceCardProps> = ({ ambulance, onEdit, onDele
   return (
     <div className="w-[280px] transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
       <div className="bg-gradient-to-b from-blue-500 to-blue-600 rounded-xl shadow-lg overflow-hidden relative min-h-[320px]">
-        {/* Curved Bottom */}
+
         <div className="absolute bottom-0 left-0 right-0 h-20 -z-10">
           <svg
             className="absolute bottom-0 w-full h-full"
@@ -35,7 +32,6 @@ const AmbulanceCard: React.FC<AmbulanceCardProps> = ({ ambulance, onEdit, onDele
             />
           </svg>
         </div>
-        {/* Image Section */}
         <div className="h-36 w-full relative bg-white">
           <Image
             src={'/images/ambulance.webp'}
@@ -46,9 +42,8 @@ const AmbulanceCard: React.FC<AmbulanceCardProps> = ({ ambulance, onEdit, onDele
           />
         </div>
 
-        {/* Content Container */}
         <div className="pt-2 pb-2 relative z-10 px-6">
-          {/* Title Section */}
+
           <div className="text-center mb-2">
             <h3 className="text-md font-semibold text-white mb-1">{ambulance.title}</h3>
             <p className="text-blue-100 text-sm flex items-center justify-center gap-1">
@@ -57,7 +52,6 @@ const AmbulanceCard: React.FC<AmbulanceCardProps> = ({ ambulance, onEdit, onDele
             </p>
           </div>
 
-          {/* Info Section */}
           <div className="space-y-1">
             <div className="flex items-center text-white gap-2 text-sm">
               <div className="flex items-center gap-2">
@@ -89,7 +83,6 @@ const AmbulanceCard: React.FC<AmbulanceCardProps> = ({ ambulance, onEdit, onDele
             </div>
           </div>
 
-          {/* Action Buttons */}
           <div className="flex justify-end gap-2 mt-2">
             <div className="relative">
               <button
@@ -103,7 +96,7 @@ const AmbulanceCard: React.FC<AmbulanceCardProps> = ({ ambulance, onEdit, onDele
               </button>
               {showEditTooltip && (
                 <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded whitespace-nowrap">
-                  Edit 
+                  Edit
                 </div>
               )}
             </div>
@@ -119,7 +112,7 @@ const AmbulanceCard: React.FC<AmbulanceCardProps> = ({ ambulance, onEdit, onDele
               </button>
               {showDeleteTooltip && (
                 <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 bg-gray-800 text-white text-xs rounded whitespace-nowrap">
-                  Delete 
+                  Delete
                 </div>
               )}
             </div>

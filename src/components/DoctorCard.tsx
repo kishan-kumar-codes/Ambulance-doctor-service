@@ -1,5 +1,3 @@
-
-
 "use client";
 
 import Image from 'next/image';
@@ -19,17 +17,15 @@ const DoctorCard: React.FC<DoctorCardProps> = ({ doctor, onEdit, onDelete }) => 
 
   return (
     <div className="w-[250px] mx-auto">
-      {/* Card Holder Frame */}
       <div className="bg-gray-100 p-2 rounded-xl shadow-2xl">
-        {/* Card Holes */}
+     
         <div className="flex justify-between px-6 mb-2">
           <div className="w-4 h-4 rounded-full bg-gray-300"></div>
           <div className="w-4 h-4 rounded-full bg-gray-300"></div>
         </div>
 
-        {/* ID Card */}
         <div className="bg-white rounded-lg overflow-hidden shadow-inner relative">
-          {/* Wave Background */}
+        
           <div className="absolute inset-0 bg-gradient-to-b from-blue-500 to-blue-600">
             <div className="absolute bottom-0 left-0 right-0">
               <svg
@@ -47,16 +43,15 @@ const DoctorCard: React.FC<DoctorCardProps> = ({ doctor, onEdit, onDelete }) => 
             </div>
           </div>
 
-          {/* Content */}
           <div className="relative px-6 pt-4 pb-2">
-            {/* Hospital Logo */}
+           
             <div className="flex justify-center mb-3">
               <div className="bg-white px-4 py-1 rounded-lg shadow-md">
                 <h3 className="text-blue-600 font-bold text-sm">HOSPITAL NAME</h3>
               </div>
             </div>
 
-            {/* Profile Image */}
+           
             <div className="flex justify-center mb-3">
               <div className="relative w-20 h-20 rounded-full border-4 border-white shadow-lg overflow-hidden">
                 <Image
@@ -69,7 +64,7 @@ const DoctorCard: React.FC<DoctorCardProps> = ({ doctor, onEdit, onDelete }) => 
               </div>
             </div>
 
-            {/* Doctor Info */}
+         
             <div className="text-center mb-3">
               <h3 className="text-lg font-bold text-white mb-1">{doctor.title}</h3>
               <div className="flex items-center justify-center text-white/90 gap-1">
@@ -78,7 +73,7 @@ const DoctorCard: React.FC<DoctorCardProps> = ({ doctor, onEdit, onDelete }) => 
               </div>
             </div>
 
-            {/* Details */}
+          
             <div className="space-y-1 mb-6">
               <div className="flex items-center text-xs text-white">
                 <span className="w-16 font-semibold flex items-center gap-1"> <Hash className="w-3 h-3" />ID No</span>
@@ -104,7 +99,6 @@ const DoctorCard: React.FC<DoctorCardProps> = ({ doctor, onEdit, onDelete }) => 
               </div>
             </div>
 
-            {/* Action Buttons */}
             <div className="flex justify-end space-x-2">
               <div className="relative">
                 <button

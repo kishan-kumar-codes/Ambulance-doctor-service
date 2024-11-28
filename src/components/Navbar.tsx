@@ -35,14 +35,12 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* Desktop Navigation: Always visible from `md` screens */}
           <div className="hidden md:block items-center space-x-8">
             <NavLink href="/" scrolled={scrolled}>Home</NavLink>
             <NavLink href="/doctors" scrolled={scrolled}>Doctors</NavLink>
             <NavLink href="/ambulance" scrolled={scrolled}>Ambulance</NavLink>
           </div>
 
-          {/* Mobile Menu Toggle: Visible only on small screens */}
           <div className=" md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -58,7 +56,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Navigation Menu: Visible only when toggled on small screens */}
       <div
         className={`md:hidden transition-all duration-300 ease-in-out ${
           isOpen ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0'

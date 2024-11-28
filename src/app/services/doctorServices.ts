@@ -1,11 +1,10 @@
 import { Doctor } from '../types/doctor';
 
-const API_URL = 'api/doctors'; // Replace with your actual API URL
+const API_URL = 'api/doctors';
 
 export const fetchDoctors = async (page: number, limit: number): Promise<{ doctors: Doctor[], total: number }> => {
   const response = await fetch(`${API_URL}?page=${page}&limit=${limit}`);
   const data = await response.json()
-  console.log('Response:',data);
   if (!response.ok) throw new Error('Failed to fetch doctors');
   return data;
 };
